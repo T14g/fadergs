@@ -18,6 +18,8 @@ public class Busca {
       System.out.println("Digite o valor:");
       val = in.nextInt();
       
+      System.out.println("--------------BUSCA SEQUENCIAL------------");
+      
       //Não achou o val procurado se -1
       if(busca.sequencial(val) == -1 ){
           System.out.println("Valor não encontrado");
@@ -25,12 +27,16 @@ public class Busca {
           System.out.println("Valor encontrado na posição " + busca.sequencial(val));
       }
       
+      System.out.println("--------------BUSCA Binária------------");
       
+      //Não achou o val procurado se -1
+      if(busca.binario(val) == -1 ){
+          System.out.println("Valor não encontrado");
+      }else{
+          System.out.println("Valor encontrado na posição " + busca.binario(val));
+      }
       
-      
-      
-      
-      
+        
     }
     
 }
